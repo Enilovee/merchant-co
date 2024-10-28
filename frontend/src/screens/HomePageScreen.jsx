@@ -10,7 +10,7 @@ import hermesImage from '../assets/Hermes.jpg'
 import channelImage from '../assets/Chanel.jpg'
 import gucciImage from '../assets/Gucci.jpg'
 import pradaImage from '../assets//Prada.jpg'
-import { Card, Col, ListGroup, Row } from 'react-bootstrap';
+import { ListGroup } from 'react-bootstrap';
 
 const HomePageScreen = () => {
   return (
