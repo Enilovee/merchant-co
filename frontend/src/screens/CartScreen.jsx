@@ -40,7 +40,7 @@ const CartScreen = () => {
                                 <Col md={3}>
                                     <Link to={`/product/${item._id}`}> { item.name} </Link>
                                 </Col>
-                                <Col style={{color:"black"}} md={2}><span style={{textDecoration:"line-through"}}>N</span>{item.price}</Col>
+                                <Col style={{color:"black"}} md={2}>${item.price}</Col>
                                 <Col style={{color:"black"}} md={2}>
                                 <Form.Control
                                         as = 'select'
@@ -71,7 +71,7 @@ const CartScreen = () => {
                     <h2 >
                         SubTotal ({ cartItems.reduce((acc, item)=> acc + item.qty, 0)}) items
                     </h2>
-                    <span style={{textDecoration:'line-through'}}>N</span>{ cartItems.reduce((acc, item)=> acc +item.qty * item.price, 0).toFixed(2)}
+                    ${ cartItems.reduce((acc, item)=> acc +item.qty * item.price, 0).toFixed(2)}
                 </ListGroup.Item>
                 <ListGroup.Item>
                     <Button type="buttton" className="btn-block" disabled={ cartItems.length === 0 } 

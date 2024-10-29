@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { Navbar, Nav, Container, Badge, NavDropdown } from 'react-bootstrap'
-import{ FaList, FaShoppingCart, FaUser}  from 'react-icons/fa'
+import{  FaShoppingCart, FaUser}  from 'react-icons/fa'
 import { LinkContainer } from 'react-router-bootstrap'
 import { useSelector, useDispatch } from 'react-redux'
 import { useLogoutMutation } from '../slices/usersApiSlice'
@@ -29,16 +29,16 @@ const logoutHandler = async () =>{
   return (
     
     <header>
-        <Navbar   variant='black' expand='md' collapseOnSelect>
+        <Navbar style={{ background:"black", color:"white",}} variant='dark' expand='lg' collapseOnSelect>
             <Container>
                <LinkContainer to ='/'> 
               
             <Navbar.Brand >
-              <strong style={{ paddingLeft:"20px" }}>merchant & co </strong>
+              <strong style={{ marginRight:"60px"}}>merchant & co </strong>
 
               </Navbar.Brand>
               </LinkContainer> 
-              <Link to={'/products'}> <FaList />  Products</Link>
+              <Link to={'/products'} style={{color:"white", textDecoration:"none", font:"bold"}} >   Products</Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse>
                 <Nav className="ms-auto">

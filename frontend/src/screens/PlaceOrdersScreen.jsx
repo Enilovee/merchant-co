@@ -85,7 +85,7 @@ const PlaceOrdersScreen = () => {
                        </Link>
                       </Col>
                       <Col md={4}>
-                      { item.qty } x <span className='text-decoration-line-through'>N</span>{item.price} =  <span className='text-decoration-line-through'>N</span>{item.qty * item.price}
+                      { item.qty } x ${item.price} =  ${item.qty * item.price}
                       </Col>
                     </Row>
                   </ListGroup.Item>
@@ -104,25 +104,25 @@ const PlaceOrdersScreen = () => {
                   <ListGroup.Item>
                     <Row>
                       <Col> Items : </Col>
-                      <Col> <span className='text-decoration-line-through'>N</span>{cart.itemsPrice} </Col>
+                      <Col> ${cart.itemsPrice} </Col>
                     </Row>
                   </ListGroup.Item>
                   <ListGroup.Item>
                     <Row>
                       <Col> Shipping : </Col>
-                      <Col> <span className='text-decoration-line-through'>N</span>{cart.shippingPrice} </Col>
+                      <Col>${cart.shippingPrice} </Col>
                     </Row>
                   </ListGroup.Item>
                   <ListGroup.Item>
                     <Row>
                       <Col> VAT : </Col>
-                      <Col> <span className='text-decoration-line-through'>N</span>{cart.taxPrice} </Col>
+                      <Col> ${cart.taxPrice} </Col>
                     </Row>
                   </ListGroup.Item>
                   <ListGroup.Item>
                 <Row>
                   <Col>Total: </Col>
-                  <Col> <span className='text-decoration-line-through'>N</span>{cart.totalPrice}</Col>
+                  <Col> ${cart.totalPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>

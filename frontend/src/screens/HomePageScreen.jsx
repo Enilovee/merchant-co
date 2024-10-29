@@ -10,75 +10,76 @@ import hermesImage from '../assets/Hermes.jpg'
 import channelImage from '../assets/Chanel.jpg'
 import gucciImage from '../assets/Gucci.jpg'
 import pradaImage from '../assets//Prada.jpg'
-import { ListGroup } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Container, } from 'react-bootstrap';
 
 const HomePageScreen = () => {
   return (
-    <ListGroup className='container'>
-    <ListGroup.Item style={{}} className='video-container'>
-      <video 
+    <Container className='home-container'>
+    <div className='video-container '>
+        <video 
         src={homeVideo}  
         controls 
         autoPlay 
         loop 
         muted 
         className='home'
-      ></video>
+      />
       <div className='lay'>Elevate Your Style with Merchant</div>
-    </ListGroup.Item>
+    </div>
 
-    <ListGroup.Item className="flex">
-      <div className="one">
+    <Container className="flex">
+      <Link to ='/products' className="one">
         <img src={girl1Image} alt="Girl 1" />
         <h2>Your Refined Style</h2> 
-      </div>
-      <div className="two">
+      </Link>
+      <Link to ='/products' className="two">
         <img src={boy1Image} alt="Boy 1" />
         <h2>Casual Comfort</h2> 
-      </div>
-      <div className="three">
+      </Link>
+      <Link to ='/products' className="three">
         <img src={girl2Image} alt="Girl 2" />
         <h2>Chic Vibes</h2> 
-      </div>
-      <div className="four">
+      </Link>
+      <Link to ='/products' className="four">
         <img src={themImage} alt="Them" />
         <h2>Effortless Trend</h2> 
-      </div>
-    </ListGroup.Item>
-    <div className="third">
-    <div className="hod">
+      </Link>
+    </Container>
+    <Container  className="third">
+    <Link to ='/products' className="hod">
         <img src={hoddieImage} alt="" />
         <h2>HODDIES</h2>
         <h4>Cozy Layers for All Seasons</h4>
         <button className='btn'>SHOP NOW</button>
-    </div>
-    <div className="shr">
+    </Link>
+    <Link to ='/products' className="shr">
        <img src={tshirtImage} alt="" />
        <h2>T-SHIRTS</h2>
        <h4>Everyday Essentials, Effortlessly Cool</h4>
        <button className='btn'>SHOP NOW</button>
-    </div>
-    </div>
+    </Link>
+    </Container>
     <div className="brand-container">
     <div className="featured">
      <div className="line"></div>
      <h2>Featured Brands</h2>
       </div>
       
-        <div className='flex flex-flex-grow-1'  >
-        <div className="hermes">
+        <Link className='flex flex-flex-grow-1'  >
+        <Link to='/products' className="hermes">
         <img src={hermesImage} alt="" />
-      </div>
-      <div className="channel">
+      </Link>
+      <Link to='/products' className="channel">
         <img src={channelImage} alt="" />
-      </div>
-      <div className="gucci">
+      </Link>
+      <Link to='/products' className="gucci">
         <img src={gucciImage} alt="" />
-      </div>
-      <div className="prada">
+      </Link>
+      <Link to='/products' className="prada">
         <img src={pradaImage} alt="" />
-      </div>
-      </div>
+      </Link>
+      </Link>
       
       
     </div>
@@ -86,7 +87,7 @@ const HomePageScreen = () => {
       <h2>At Merchant & Co., style meets connection</h2>
       <p>We believe that fashion is about more than clothes—it's about community, individuality, and a shared love for the craft. Merchant & Co. is where style enthusiasts gather, a place where stories unfold as people come together to discover unique pieces. Whether you're exploring our collection online or visiting in person, you'll feel the pulse of timeless trends and new ideas that make every moment magical. Embrace your style journey with us—because at Merchant & Co., every visit is a new chapter waiting to be written.</p>
     </div>
-  </ListGroup>
+  </Container>
 );
 }
 

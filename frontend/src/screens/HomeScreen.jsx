@@ -15,7 +15,7 @@ const HomeScreen = () => {
 
   return (
     <>
-    {!keyword ? (<ProductCarousel /> ): (<Link to='/' className =' btn btn-light mb-4'>Go Back</Link>) }
+    {!keyword ? (<ProductCarousel /> ): (<Link to='/products' className =' btn btn-light mb-4'>Go Back</Link>) }
     {isLoading ? (<Loader />) : error ? (<Message variant='danger'>{error?.data?.message || error?.error}</Message>):(< >
     <h1>Latest Products</h1>
     <Row>

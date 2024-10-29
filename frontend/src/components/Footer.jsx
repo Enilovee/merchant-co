@@ -29,12 +29,7 @@ const Footer = () => {
           <p>Phone number:  +44077 8066 7931</p>
         </div>
       
-      <div className="information">
-        <h3>Information</h3>
-        <h4>About Us</h4>
-        <h4>FAQs</h4>
-        <h4>Terms of Service</h4>
-      </div>
+      
   </div>
   /</div>
   <Row>
