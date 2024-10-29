@@ -3,7 +3,7 @@ import homeVideo from '../assets/home-vid.mp4';
 import girl1Image from '../assets/girl1.jpg'
 import boy1Image from '../assets/boy1.jpg'
 import girl2Image from '../assets/girl2.jpg'
-import themImage from '../assets/them.jpg'
+import themImage from '../assets/dress3.jpg'
 import hoddieImage from '../assets/hoddie.jpg'
 import tshirtImage from '../assets/tshirt.jpg'
 import hermesImage from '../assets/Hermes.jpg'
