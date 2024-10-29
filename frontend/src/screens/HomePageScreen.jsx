@@ -15,7 +15,7 @@ import { Container, } from 'react-bootstrap';
 
 const HomePageScreen = () => {
   return (
-    <Container className='home-container'>
+    <Container  className='home-container'>
     <div className='video-container '>
         <video 
         src={homeVideo}  
@@ -85,7 +85,7 @@ const HomePageScreen = () => {
     </div>
     <div className="style">
       <h2>At Merchant & Co., style meets connection</h2>
-      <p>We believe that fashion is about more than clothes—it's about community, individuality, and a shared love for the craft. Merchant & Co. is where style enthusiasts gather, a place where stories unfold as people come together to discover unique pieces. Whether you're exploring our collection online or visiting in person, you'll feel the pulse of timeless trends and new ideas that make every moment magical. Embrace your style journey with us—because at Merchant & Co., every visit is a new chapter waiting to be written.</p>
+      <p>We believe that fashion is about more than clothes it's about community, individuality, and a shared love for the craft. Merchant & Co. is where style enthusiasts gather, a place where stories unfold as people come together to discover unique pieces. Whether you're exploring our collection online or visiting in person, you'll feel the pulse of timeless trends and new ideas that make every moment magical. Embrace your style journey with us—because at Merchant & Co., every visit is a new chapter waiting to be written.</p>
     </div>
   </Container>
 );
