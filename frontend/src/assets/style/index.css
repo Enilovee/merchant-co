@@ -69,7 +69,6 @@ main {
 }
 .carousel-size{
   width: 100vw;
-  min-width: 1000px;
   height: 70vh;
   object-fit: contain;
 }
