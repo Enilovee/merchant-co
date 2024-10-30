@@ -34,7 +34,7 @@ const logoutHandler = async () =>{
                <LinkContainer to ='/'> 
               
             <Navbar.Brand >
-              <strong style={{ marginRight:"60px"}}>merchant & co </strong>
+              <strong style={{ marginRight:"60px"}}>Merchant & Co </strong>
 
               </Navbar.Brand>
               </LinkContainer> 
