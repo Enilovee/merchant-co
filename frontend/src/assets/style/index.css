@@ -63,12 +63,25 @@ main {
   .video-container{
     margin-bottom: 0;
   }
-  .flext{
+  .flex-home{
     margin-top: 0px;
+    display: flex;  
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
   }
+  .third-home{
+    display: flex;
+    column-gap: 25px;
+  }
+  .brand{
+    flex-wrap: wrap;
+  }
+ 
+  
 }
 .carousel-size{
-  width: 100vw;
+  width: 100vw; 
   height: 70vh;
   object-fit: contain;
 }
@@ -79,7 +92,7 @@ main {
   cursor: pointer;
 }
 
-.flex {
+.flex-home {
   margin-top: 90px;
   display: flex;
   justify-content: space-between; 
@@ -88,7 +101,7 @@ main {
   max-width: 1500px; 
 }
 
-.flex div {
+.flex-home div {
   flex: 1; 
   display: flex;
   flex-direction: column; 
@@ -96,28 +109,28 @@ main {
   padding: 10px;
 }
 
-.flex img {
+.flex-home img {
   width: 100%; 
   height: 300px;
   object-fit: contain;
 }
 
-.flex h2 {
+.flex-home h2 {
   margin-top: 10px; 
   font-size: 18px; 
   text-align: center; 
   color: #333; 
 }
 
-.third {
+.third-home {
   display: flex;
   justify-content: space-between; 
-  width: 100%;
+  width: 70%;
   max-width: 1000px;
   margin-top: 50px; 
 }
 
-.third div {
+.third-home div {
   flex: 1; 
   display: flex;
   flex-direction: column; 
@@ -125,27 +138,27 @@ main {
   padding: 10px;
 }
 
-.third img {
+.third-home img {
   width: 100%; 
   height: 350px;
   object-fit: contain;
 }
 
-.third h2 {
+.third-home h2 {
   margin-top: 10px; 
   font-size: 18px;
   text-align: center;
   color: #333;
 }
 
-.third h4 {
+.third-home h4 {
   margin-top: 5px; 
   font-size: 14px; 
   text-align: center; 
   color: #777; 
 }
 
-.third .btn{
+.third-home .btn{
   margin-top: 10px;
   width: 100px;
   height: 30px;
@@ -199,7 +212,14 @@ main {
 
 .brand{
   display: flex;
-  gap: 4rem;
+  gap: 20px;
+  flex-direction: row;
+  height:auto;
+  width: 70vw;
+}
+.brandImg{
+  width: 220px;
+  height: auto;
 }
 
 .style {

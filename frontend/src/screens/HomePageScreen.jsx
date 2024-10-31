@@ -28,25 +28,25 @@ const HomePageScreen = () => {
       <div className='lay'>Elevate Your Style with Merchant</div>
     </div>
 
-    <Container className="flex">
-    <Link to={'/products'} style={{color:"white", textDecoration:"none", font:"bold"}} >
+    <Container className="flex-home">
+    <Link to={'/products'} style={{color:"white", textDecoration:"none", font:"bold"}}  className='cono'>
         <img src={girl1Image} alt="Girl 1" />
         <h2>Your Refined Style</h2> 
       </Link>
-      <Link to={'/products'} style={{color:"white", textDecoration:"none", font:"bold"}} >
+      <Link to={'/products'} style={{color:"white", textDecoration:"none", font:"bold"}} className='cono'>
         <img src={boy1Image} alt="Boy 1" />
         <h2>Casual Comfort</h2> 
       </Link>
-      <Link to={'/products'} style={{color:"white", textDecoration:"none", font:"bold"}} >
+      <Link to={'/products'} style={{color:"white", textDecoration:"none", font:"bold"}} className='cono' >
         <img src={girl2Image} alt="Girl 2" />
         <h2>Chic Vibes</h2> 
       </Link>
-      <Link to={'/products'} style={{color:"white", textDecoration:"none", font:"bold"}} >
+      <Link to={'/products'} style={{color:"white", textDecoration:"none", font:"bold"}}className='cono' >
         <img src={themImage} alt="Them" />
         <h2>Effortless Trend</h2> 
       </Link>
     </Container>
-    <Container  className="third">
+    <Container  className="third-home">
     <Link to={'/products'} style={{color:"white", textDecoration:"none", font:"bold"}} >
         <img src={hoddieImage} alt="" />
         <h2>HODDIES</h2>
@@ -66,20 +66,20 @@ const HomePageScreen = () => {
      <h2>Featured Brands</h2>
       </div>
       
-        <Link className='flex flex-flex-grow-1'  >
+        <div className='brand'  >
          <Link to={'/products'} style={{color:"white", textDecoration:"none", font:"bold"}} >
-        <img src={hermesImage} alt="" />
+        <img src={hermesImage} alt=""className='brandImg' />
       </Link>
        <Link to={'/products'} style={{color:"white", textDecoration:"none", font:"bold"}} >
-        <img src={channelImage} alt="" />
+        <img src={channelImage} alt="" className='brandImg' />
+      </Link>
+       <Link to={'/products'} style={{color:"white", textDecoration:"none", font:"bold"}}  >
+        <img src={gucciImage} alt="" className='brandImg'/>
       </Link>
        <Link to={'/products'} style={{color:"white", textDecoration:"none", font:"bold"}} >
-        <img src={gucciImage} alt="" />
+        <img src={pradaImage} alt=""  className='brandImg'/>
       </Link>
-       <Link to={'/products'} style={{color:"white", textDecoration:"none", font:"bold"}} >
-        <img src={pradaImage} alt="" />
-      </Link>
-      </Link>
+      </div>
       
       
     </div>
