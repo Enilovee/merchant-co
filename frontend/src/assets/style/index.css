@@ -57,7 +57,7 @@ main {
     top: 23px;
   }
   .home{
-    width:100vw;
+    width:90vw;
   
   }
   .video-container{
@@ -67,15 +67,30 @@ main {
     margin-top: 0px;
     display: flex;  
     flex-wrap: wrap-reverse;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: end;
+  }
+  .flex-home img{
+    margin-left: 35px;
   }
   .third-home{
     display: flex;
-    column-gap: 25px;
+    gap: 12px; 
+  }
+  .third-home h2{
+    margin-top: 0px;
+  }
+  .third-home img{
+    margin-bottom: -66px;
   }
   .brand{
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brandImg{
+    width: 100px;
+    height: 50px;
   }
  
   
@@ -163,7 +178,6 @@ main {
   width: 100px;
   height: 30px;
   cursor: pointer;
-  border: 1px solid black;
   font-weight: 600;
   background-color: #fff;
   text-decoration: none;
@@ -172,6 +186,10 @@ main {
 
 .brand-container{
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .featured {
@@ -251,7 +269,7 @@ main {
 }
 
 .footer-container{
-  margin-right: 20rem;
+  margin-right: 7rem;
   margin-top: 40px;
   display: flex;
 }
